@@ -1,4 +1,7 @@
+/* FONTS FAMILY */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
 :root {
     --main-color: #292524;
@@ -88,3 +91,32 @@ body {
 .margen_card_proyectos {
     margin-left: 154px;
 }
+
+.margen_card_proyectos--Grid {
+   display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+.margen_card_proyectos--Grid h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.margen_card_proyectos--Grid p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+/* Seccion Habilidades */
+.seccion_habilidades {
+    height: 300px;
+}
+
+/* .margen_card_proyectos--flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+} */
