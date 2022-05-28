@@ -71,10 +71,17 @@ body {
     margin-left: 154px;
 }
 
+.no_mostrar {
+    display: none;
+}
+
+
+
+
 /* Seccion Sobre Mi */
 
 .sobre_mi_caja {
-    height: 900px;
+    height: 500px;
     margin-top: 114px;
 }
 
@@ -85,6 +92,9 @@ body {
 .margen_text_sobremi {
     margin: 0 auto;
 }
+
+
+
 
 /* Seccion Proyectos */
 
@@ -112,6 +122,8 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
     grid-gap: var(--grid-layout-gap);
     justify-items: center;
+
+    padding: 0 150px;
 }
 
 .margen_card_proyectos--Grid h5 {
@@ -125,9 +137,27 @@ body {
     font-size: 1.1rem;
 }
 
+
+
+
+
 /* Seccion Habilidades */
 .seccion_habilidades {
     height: 300px;
+}
+
+.container_habilidades {
+    display: flex;
+    align-items: center;
+}
+
+.margen_barras {
+    margin-left: 220px;
+}
+
+.caja_curriculum{
+    margin-right: 130px;
+    width: 900px;
 }
 
 /* .margen_card_proyectos--flex {

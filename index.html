@@ -30,10 +30,10 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <ul class="navbar-nav me-5">
-                        <li><a class="nav-link text_naranja_nav pe-5" href="#">Sobre mi</a></li>
-                        <li><a class="nav-link text_naranja_nav pe-5" href="#">Próyectos</a></li>
-                        <li><a class="nav-link text_naranja_nav pe-5" href="#">Curriculo</a></li>
-                        <li><a class="nav-link text_naranja_nav" href="#">Contacto</a></li>
+                        <li><a class="nav-link text_naranja_nav pe-5" href="#sobre_mi">Sobre mi</a></li>
+                        <li><a class="nav-link text_naranja_nav pe-5" href="#proyectos">Próyectos</a></li>
+                        <li><a class="nav-link text_naranja_nav pe-5" href="#curriculo">Curriculo</a></li>
+                        <li><a class="nav-link text_naranja_nav" href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -48,6 +48,7 @@
                 <div class="text-center p-5"><button class="btn btn_conoceme">CONOCEME</button></div>
             </article>
         </section>
+        <section id="sobre_mi"></section>
 
         <!-- Seccion Sobre Mi -->
         <section class="sobre_mi_caja">
@@ -59,7 +60,10 @@
                     Creando excelentes experiencias de usuario.</p>
             </div>
         </section>
-
+        
+        <section id="proyectos">
+            <br><br><br><br>
+        </section>
         <!-- Seccion Proyectos-->
         <section>
             <h2 class="margen_subtitulo">Proyectos</h2>
@@ -109,6 +113,7 @@
             </div>
         </section>
 
+        <section id="curriculo"></section>
         <!-- Seccion Curriculo -->
         <section class="sobre_mi_caja">
             <h2 class="margen_subtitulo">Curriculo</h2>
@@ -120,8 +125,8 @@
         <!-- Seccion Habilidades -->
         <section class="seccion_habilidades">
             <h4 class="margen_subtitulo">Habilidades</h4>
-            <div>
-                <div class="container">
+            <div class="container_habilidades">
+                <div class="container margen_barras">
                     <div class="d-flex">
                         <p class="pe-3">HTML5</p>
                         <meter class="ms-3" type="range" min="0" max="100" value="74"
@@ -140,6 +145,11 @@
                         <p class="pe-4">Inglés</p>
                         <meter class="ms-3" type="range" min="0" max="100" value="94" style="width: 200px;height: 30px"></meter>
                     </div>
+                </div>
+
+                <div class="caja_curriculum">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio vel tempore eos amet repellendus ea id, voluptatibus fuga exercitationem iusto cum nemo magnam quo doloribus autem dolorem explicabo delectus excepturi.</p>
+                    <button class="btn btn_conoceme">CURRICULUM PDF</button>
                 </div>
             </div>
         </section>
