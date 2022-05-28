@@ -34,6 +34,8 @@ body {
     text-decoration-thickness: 2px;
 }
 
+/* Seccion Conoceme */
+
 .main_section {
     display: flex;
     flex-direction: column;
@@ -52,9 +54,37 @@ body {
     font-weight: bold;
     font-family: 'Merriweather Sans', sans-serif;
     padding: 0.5pc 7pc;
+    
 }
 
 .btn_conoceme:hover {
     background-color:var(--text-color);
     color: #FFFFFF;
+}
+
+/* Generales */
+
+.margen_subtitulo {
+    margin-left: 154px;
+}
+
+/* Seccion Sobre Mi */
+
+.sobre_mi_caja {
+    height: 900px;
+    margin-top: 114px;
+}
+
+.tam_text_sobremi{
+    width: 414px;
+}
+
+.margen_text_sobremi {
+    margin: 0 auto;
+}
+
+/* Seccion Proyectos */
+
+.margen_card_proyectos {
+    margin-left: 154px;
 }
