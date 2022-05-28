@@ -31,7 +31,7 @@ body {
 
 .text_naranja_nav:hover {
     color: #FFFFFF;
-    text-decoration:underline;
+    text-decoration: underline;
     text-decoration-color: var(--text-color);
     text-underline-offset: 7px;
     text-decoration-thickness: 2px;
@@ -57,11 +57,11 @@ body {
     font-weight: bold;
     font-family: 'Merriweather Sans', sans-serif;
     padding: 0.5pc 7pc;
-    
+
 }
 
 .btn_conoceme:hover {
-    background-color:var(--text-color);
+    background-color: var(--text-color);
     color: #FFFFFF;
 }
 
@@ -78,7 +78,7 @@ body {
     margin-top: 114px;
 }
 
-.tam_text_sobremi{
+.tam_text_sobremi {
     width: 414px;
 }
 
@@ -89,14 +89,31 @@ body {
 /* Seccion Proyectos */
 
 .margen_card_proyectos {
-    margin-left: 154px;
+    margin: 3rem auto;
 }
 
 .margen_card_proyectos--Grid {
-   display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
-    grid-gap: 20px;
+    /**
+   * User input values.
+   */
+    --grid-layout-gap: 3rem;
+    --grid-column-count: 3;
+    --grid-item--min-width: 300px;
+    /**
+   * Calculated values.
+   */
+    --gap-count: calc(var(--grid-column-count) - 1);
+    --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+    --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
+    /**
+     * Grid container.
+     */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
+    grid-gap: var(--grid-layout-gap);
+    justify-items: center;
 }
+
 .margen_card_proyectos--Grid h5 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.25rem;
