@@ -160,10 +160,31 @@ body {
     width: 900px;
 }
 
-/* .margen_card_proyectos--flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-} */
+/* Barra de progreso / meter */
+meter {
+    --cl-black: #000;
+    --cl-orange: #fe8f25;
+}
+
+/* En Chrome */
+::-webkit-meter-bar {
+    background-color:  var(--cl-black);
+    border: 0;
+    height: 13px;
+}
+
+::-webkit-meter-optimum-value {
+    background: var(--cl-orange);
+}
+
+/* En Firefox */
+meter::-moz-meter-bar {
+    background: var(--cl-orange);
+    border: 0;
+    height: 13px;
+
+}
+:-moz-meter-optimum {
+    background: var(--cl-black);
+    max-height: 13px;
+}
