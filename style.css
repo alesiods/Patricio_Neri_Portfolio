@@ -15,7 +15,8 @@
 }
 
 body {
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
+    
 }
 
 .bg_negro {
@@ -38,6 +39,22 @@ body {
 }
 
 /* Seccion Conoceme */
+h1 {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+
+}
+
+.subt_conoceme {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+}
 
 .main_section {
     display: flex;
@@ -67,12 +84,27 @@ body {
 
 /* Generales */
 
-.margen_subtitulo {
-    margin-left: 154px;
-}
-
 .no_mostrar {
     display: none;
+}
+
+.margen_subtitulo {
+    text-align: center;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+
+
+h4 {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
 }
 
 
@@ -81,12 +113,17 @@ body {
 /* Seccion Sobre Mi */
 
 .sobre_mi_caja {
-    height: 500px;
-    margin-top: 114px;
+    height: 448px;
+    margin-top: 200px;
 }
 
 .tam_text_sobremi {
-    width: 414px;
+    width: 482px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
 }
 
 .margen_text_sobremi {
@@ -106,8 +143,8 @@ body {
     /**
    * User input values.
    */
-    --grid-layout-gap: 3rem;
-    --grid-column-count: 3;
+    --grid-layout-gap: 1rem;
+    --grid-column-count: 2;
     --grid-item--min-width: 300px;
     /**
    * Calculated values.
@@ -123,11 +160,11 @@ body {
     grid-gap: var(--grid-layout-gap);
     justify-items: center;
 
-    padding: 0 150px;
+    padding: 0 250px;
 }
 
 .margen_card_proyectos--Grid h5 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Merriweather Sans';;
     font-size: 1.25rem;
     font-weight: bold;
 }
@@ -138,6 +175,25 @@ body {
 }
 
 
+/* Seccion Curriculo */
+
+.curriculo_caja {
+    height: 548px;
+    margin-top: 100px;
+}
+
+.caja_texto_experLaboral {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.text_expLaboral {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
 
 
 
