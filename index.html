@@ -11,6 +11,8 @@
         content="Frontend, front-end, frontend developer, desarrollador frontend, portafolio, HTML, CSS3, HTML5, developer, desarrollador">
     <title>Patricio Neri Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -19,7 +21,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg_negro">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img class="rounded-circle" src="./assets/media/Ellipse-6.svg" alt="Logo" width="63.51"
+                    <img class="rounded-circle ms-4" src="./assets/media/Ellipse-6.svg" alt="Logo" width="63.51"
                         height="63.51">
                     <span class="text_naranja_nav"></span>
                 </a>
@@ -45,10 +47,10 @@
             <article>
                 <h1 class="text-center text-white p-5">Patricio Neri García</h1>
                 <h2 class="text-center text-white p-4 fs-4 mb-5 subt_conoceme">Front-end Developer</h2>
-                <div class="text-center p-5"><button class="btn btn_conoceme">CONOCEME</button></div>
+                <div class="text-center p-5"><a href="#sobre_mi"><b class="btn btn_conoceme">CONOCEME</b></a></div>
             </article>
         </section>
-        <section id="sobre_mi"></section>
+        <div id="sobre_mi"></div>
 
         <!-- Seccion Sobre Mi -->
         <section class="sobre_mi_caja">
@@ -61,92 +63,122 @@
             </div>
         </section>
         
-        <section id="proyectos">
+        <div id="proyectos">
             <br><br><br><br>
-        </section>
+        </div>
         <!-- Seccion Proyectos-->
-        <section>
+        <section class="seccion_proyectos">
             <h2 class="margen_subtitulo">Proyectos</h2>
             <div class="margen_card_proyectos--Grid">
-                <div>
+                <article>
                     <div class="margen_card_proyectos">
                         <img src="./assets/media/imagen.de.tarjeta.png" alt="proyecto">
                         <h5>Nombre del proyecto a presentar</h5>
                         <p>Breve descripción del mismo</p>
                     </div>
-                </div>
-                <div >
+                </article>
+                <article>
                     <div class="margen_card_proyectos">
                         <img src="./assets/media/imagen.de.tarjeta.png" alt="proyecto">
                         <h5>Nombre del proyecto a presentar</h5>
                         <p>Breve descripción del mismo</p>
                     </div>
-                </div>
-                <div >
+                </article>
+                <article>
                     <div class="margen_card_proyectos">
                         <img src="./assets/media/imagen.de.tarjeta.png" alt="proyecto">
                         <h5>Nombre del proyecto a presentar</h5>
                         <p>Breve descripción del mismo</p>
                     </div>
-                </div>
-                <div >
+                </article>
+                <article>
                     <div class="margen_card_proyectos">
                         <img src="./assets/media/imagen.de.tarjeta.png" alt="proyecto">
                         <h5>Nombre del proyecto a presentar</h5>
                         <p>Breve descripción del mismo</p>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
 
-        <section id="curriculo"></section>
+        <div id="curriculo"></div>
         <!-- Seccion Curriculo -->
         <section class="curriculo_caja">
             <h2 class="margen_subtitulo">Curriculo</h2>
-            <div class="caja_texto_experLaboral">
+            <article class="caja_texto_experLaboral">
                 <h4>Experiencia Laboral:</h4>
                 <div>
-                    <p class="text_expLaboral">Abr 2021 - Actualidad</p>
-                    <p>Doctorado en Cs. Biológicas (UBA) - Instituto Leloir.</p>
-                    <p class="text_expLaboral">Julio 2019 - Diciembre 2019</p>
-                    <p>Tesina de grado - Investigación Agrobiotecnológica -IAL (CONICET)</p>
-                    <p class="text_expLaboral">Julio 2019- Marzo 2021</p>
-                    <p>Tesina de grado - Investigación Agrobiotecnológica -IAL (CONICET)</p>
+                    <p class="text_expLaboral">Abr 2021 - Actualidad
+                        <br>
+                        <span>Doctorado en Cs. Biológicas (UBA) - Instituto Leloir.</span>
+                    </p>
+                    <p class="text_expLaboral">Julio 2019 - Diciembre 2019
+                        <br>
+                        <span>Tesina de grado - Investigación Agrobiotecnológica -IAL (CONICET)</span>
+                    </p>
+                    <p class="text_expLaboral">Julio 2019- Marzo 2021
+                        <br>
+                        <span>Tesina de grado - Investigación Agrobiotecnológica -IAL (CONICET)</span>
+                    </p>
                 </div>
-            </div>
+            </article>
+        
+            <!-- Habilidades -->
+            <article class="seccion_habilidades">
+                <h4>Habilidades:</h4>
+                <div class="barra_progreso_caja">
+                    <div><span>CSS3</span>
+                        <div class="barra_progreso">
+                            <div class="barra_progreso--porcentaje" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div><span>HTML5</span>
+                        <div class="barra_progreso">
+                            <div class="barra_progreso--porcentaje" style="width: 74%;"></div>
+                        </div>
+                    </div>
+                    <div><span>JavaScript</span>
+                        <div class="barra_progreso">
+                            <div class="barra_progreso--porcentaje" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div><span>Inglés</span>
+                        <div class="barra_progreso">
+                            <div class="barra_progreso--porcentaje" style="width: 97%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        
+            <!-- CV -->
+            <article class="caja_curriculum">
+                <p>Puedes descargar una copia de mi curriculum completo. </p>
+                <div>
+                    <a href="./assets/archivos/CV--Garcia-Patricio.pdf" download="CV--Garcia-Patricio.pdf"><button class="btn btn_conoceme">CURRICULUM PDF</button></a>
+                </div>
+            </article>
         </section>
 
-        <!-- Seccion Habilidades -->
-        <section class="seccion_habilidades">
-            <h4>Habilidades</h4>
-            <div class="container_habilidades">
-                <div class="container margen_barras">
-                    <div class="d-flex">
-                        <p class="pe-3 mt-3">HTML5</p>
-                        <meter class="ms-3 align-self-center" type="range" min="0" max="100" value="74" style="width: 200px;"></meter>
-                    </div>
-                    <div class="d-flex">
-                        <p class="me-4 pe-2 mt-3">CSS3</p>
-                        <meter class="ms-3 align-self-center" type="range" min="0" max="100" value="70" style="width: 200px;"></meter>
-                    </div>
-                    <div class="d-flex">
-                        <p class="mt-3">JavaScript</p>
-                        <meter class="ms-3 align-self-center" type="range" min="0" max="100" value="80" style="width: 200px;"></meter>
-                    </div>
-                    <div class="d-flex">
-                        <p class="pe-4 mt-3">Inglés</p>
-                        <meter class="ms-3 align-self-center" type="range" min="0" max="100" value="94" style="width: 200px;"></meter>
-                    </div>
+        <!-- Contacto -->
+        <div id="contacto"></div>
+        <section class="seccion_contacto">
+            <article>
+                <h4>Contacto</h4>
+                <div class="seccion_contacto--perfil">
+                    <img src="./assets/media/Ellipse 7.png" alt="Foto perfil" width="173px" height="173px">
+                    <p>Patricio Neri García</p>
+                    <p>Frontend Developer</p>
+                    <p>Contáctame</p>
                 </div>
-        
-                <div class="caja_curriculum">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio vel tempore eos amet repellendus ea
-                        id, voluptatibus fuga exercitationem iusto cum nemo magnam quo doloribus autem dolorem explicabo
-                        delectus excepturi.</p>
-                    <button class="btn btn_conoceme">CURRICULUM PDF</button>
+                <div class="seccion_contacto--redes">
+                    <a href="#"><img src="./assets/icons/linkedin.png">Linkedin</a>
+                    <a href="#"><img src="./assets/icons/phone.png" class="">+543425385070</a>
+                    <a href="#"><img src="./assets/icons/github.png" class="">Github</a>
                 </div>
-            </div>
+            </article>
         </section>
+
+       
 
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>

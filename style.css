@@ -1,7 +1,7 @@
 /* FONTS FAMILY */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root {
     --main-color: #292524;
@@ -74,12 +74,16 @@ h1 {
     font-weight: bold;
     font-family: 'Merriweather Sans', sans-serif;
     padding: 0.5pc 7pc;
-
 }
 
 .btn_conoceme:hover {
     background-color: var(--text-color);
     color: #FFFFFF;
+}
+
+.btn_conoceme:focus {
+    border: 1px solid var(--text-color);
+    background-color: var(--text-color);
 }
 
 /* Generales */
@@ -134,10 +138,11 @@ h4 {
 
 
 /* Seccion Proyectos */
-
-.margen_card_proyectos {
-    margin: 3rem auto;
+.seccion_proyectos {
+    background-color: #b3b3b3;
+    padding: 170px;
 }
+
 
 .margen_card_proyectos--Grid {
     /**
@@ -159,8 +164,13 @@ h4 {
     grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
     grid-gap: var(--grid-layout-gap);
     justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+}
 
-    padding: 0 250px;
+
+.margen_card_proyectos {
+    margin: 2.7rem 3rem;
 }
 
 .margen_card_proyectos--Grid h5 {
@@ -175,6 +185,9 @@ h4 {
 }
 
 
+
+
+
 /* Seccion Curriculo */
 
 .curriculo_caja {
@@ -187,6 +200,16 @@ h4 {
     margin: 0 auto;
 }
 
+
+.caja_texto_experLaboral h4{
+    margin-top: 24px;
+    font-family: 'Merriweather Sans';
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30.17px;
+    
+}
+
 .text_expLaboral {
     font-family: 'Roboto';
     font-style: normal;
@@ -195,52 +218,156 @@ h4 {
     line-height: 19px;
 }
 
+.caja_texto_experLaboral p {
+    margin-bottom: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.09px;
+}
+
+.caja_texto_experLaboral p span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18.75px;
+}
 
 
 /* Seccion Habilidades */
 .seccion_habilidades {
-    height: 300px;
-}
-
-.container_habilidades {
     display: flex;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
 }
 
-.margen_barras {
-    margin-left: 220px;
+.seccion_habilidades h4 {
+    width: 500px;
+    margin-top: 100px;
+    font-family: 'Merriweather Sans';
+    font-weight: bold;
+    align-items: flex-start;
+    font-size: 24px;
+    line-height: 30.17px;
+    margin-top: 1.7rem;
 }
 
+/* ---- Barra de progreso / meter */
+.barra_progreso_caja {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21.09px;
+}
+
+.barra_progreso_caja span {
+    width: 96.4px;
+    margin-right: 16px;
+}
+
+.barra_progreso_caja div {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21.09px;
+    margin-bottom: 16px;
+}
+
+.barra_progreso {
+    width: 320px;
+    height: 16px;
+    background: #D9D9D9;
+    border-radius: 15px;
+}
+
+.barra_progreso--porcentaje {
+    width: 0%;
+    height: 100%;
+    background: #fe8f25;
+    border-radius: 15px;
+}
+
+/*----- CV   */
 .caja_curriculum{
-    margin-right: 130px;
-    width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
 }
 
-/* Barra de progreso / meter */
-meter {
-    --cl-black: #000;
-    --cl-orange: #fe8f25;
+.caja_curriculum p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18.75px;
+    margin-bottom: 16px;
 }
 
-/* En Chrome */
-::-webkit-meter-bar {
-    background-color:  var(--cl-black);
-    border: 0;
-    height: 13px;
+.caja_curriculum a {
+   text-decoration: none;
+   color: #000;
 }
 
-::-webkit-meter-optimum-value {
-    background: var(--cl-orange);
+/* Seccion Contacto*/
+.seccion_contacto {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* En Firefox */
-meter::-moz-meter-bar {
-    background: var(--cl-orange);
-    border: 0;
-    height: 13px;
-
+ .seccion_contacto h4 {
+    font-family: 'Merriweather Sans';
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    line-height: 50.28px;
+    margin-bottom: 38px;
 }
-:-moz-meter-optimum {
-    background: var(--cl-black);
-    max-height: 13px;
+
+.seccion_contacto article {
+    width: 600px;
+    margin-top: 86px;
+}
+
+.seccion_contacto--perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+}
+
+.seccion_contacto--perfil p {
+    margin: 0;
+}
+
+.seccion_contacto--redes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 90px;
+}
+
+.seccion_contacto--redes a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28.13px;
+    color: var(--text-color);
+}
+
+.seccion_contacto--redes a img {
+    width: 40px;
+    height: 40px;
+    margin: 16px;
 }
