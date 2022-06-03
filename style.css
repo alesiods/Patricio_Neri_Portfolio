@@ -171,6 +171,7 @@ h4 {
 
 .margen_card_proyectos {
     margin: 2.7rem 3rem;
+    align-items: center;
 }
 
 .margen_card_proyectos--Grid h5 {
@@ -182,11 +183,22 @@ h4 {
 .margen_card_proyectos--Grid p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
+    width: 313px;
+    height: 50px;
 }
 
+.margen_card_proyectos a {
+    text-decoration: none;
+}
 
-
-
+.margen_card_proyectos span {
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23.44px;
+    text-decoration: none;
+}
 
 /* Seccion Curriculo */
 
