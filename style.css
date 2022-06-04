@@ -191,14 +191,20 @@ h4 {
     text-decoration: none;
 }
 
-.margen_card_proyectos span {
+#verMas {
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 23.44px;
-    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
 }
+
+.ocultar {
+    display: none;
+}
+
 
 /* Seccion Curriculo */
 
