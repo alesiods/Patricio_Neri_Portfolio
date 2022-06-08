@@ -378,8 +378,30 @@ h4 {
 .caja_curriculum a {
    text-decoration: none;
    color: var(--color-black);
+   border: 0;
 }
 
+.caja_curriculum .btn_descargarCV {
+    border: 0;
+    background-color: var(--text-color);
+    color: var(--color-black);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 88px;
+    gap: 8px;
+    border-radius: 6px;
+}
+
+.btn_descargarCV:hover {
+    color: var(--color-white);
+}
 
 
 /* Seccion Contacto*/
