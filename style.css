@@ -1,11 +1,13 @@
 /* FONTS FAMILY */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap');
 
 :root {
     --main-color: #292524;
     --text-color: #fe8f25;
+    --text-color-2: #F5F5F5;
+
     --color-white: #ffffff;
     --color-black: #000000;
     --bg-proyectos: #29252412;
@@ -19,6 +21,12 @@
 
 body {
     background-color: var(--color-white);
+}
+
+/* Scroll a secciones por id */
+body #curriculo, #contacto {
+    scroll-behavior: smooth;
+    scroll-margin-top: 60px;
 }
 
 .bg_negro {
@@ -41,23 +49,6 @@ body {
 }
 
 /* Seccion Conoceme */
-h1 {
-    font-family: 'Merriweather Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 80px;
-
-}
-
-.subt_conoceme {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
-}
-
 .main_section {
     display: flex;
     flex-direction: column;
@@ -70,16 +61,55 @@ h1 {
     background-position: center;
 }
 
+.main_section article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 88px;
+    width: 605px;
+    height: 206px;
+}
+
+.main_section h1 {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    color: var(--text-color-2);
+}
+
+.subt_conoceme {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #ffffff;
+}
+
+.main_section a {
+    text-decoration: none;
+    color: #000000;
+}
+
 .btn_conoceme {
+    display: flex;
+    padding: 16px 125px;
     background-color: var(--text-color);
     color: var(--color-black);
-    font-weight: bold;
-    font-family: 'Merriweather Sans', sans-serif;
-    padding: 0.5pc 7pc;
+    border-radius: 6px;
+    gap: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
 }
 
 .btn_conoceme:hover {
-    background-color: var(--text-color);
     color: var(--color-white);
 }
 
@@ -130,7 +160,7 @@ h4 {
 }
 
 .tam_text_sobremi p {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
