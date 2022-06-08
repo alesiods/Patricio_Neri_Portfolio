@@ -6,6 +6,9 @@
 :root {
     --main-color: #292524;
     --text-color: #fe8f25;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --bg-proyectos: #29252412;
 }
 
 * {
@@ -15,8 +18,7 @@
 }
 
 body {
-    background-color: #FFFFFF;
-    
+    background-color: var(--color-white);
 }
 
 .bg_negro {
@@ -31,7 +33,7 @@ body {
 }
 
 .text_naranja_nav:hover {
-    color: #FFFFFF;
+    color: var(--color-white);
     text-decoration: underline;
     text-decoration-color: var(--text-color);
     text-underline-offset: 7px;
@@ -70,7 +72,7 @@ h1 {
 
 .btn_conoceme {
     background-color: var(--text-color);
-    color: #000;
+    color: var(--color-black);
     font-weight: bold;
     font-family: 'Merriweather Sans', sans-serif;
     padding: 0.5pc 7pc;
@@ -78,7 +80,7 @@ h1 {
 
 .btn_conoceme:hover {
     background-color: var(--text-color);
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
 .btn_conoceme:focus {
@@ -122,12 +124,19 @@ h4 {
 }
 
 .tam_text_sobremi {
-    width: 482px;
+    width: 491px;
+    height: 243.64px;
+    padding-top: 32px;
+}
+
+.tam_text_sobremi p {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 29px;
+    margin-top: 8px;
+    line-height: 18.75px;
+    text-align: justify;
 }
 
 .margen_text_sobremi {
@@ -139,7 +148,7 @@ h4 {
 
 /* Seccion Proyectos */
 .seccion_proyectos {
-    background-color: #29252412;
+    background-color: var(--bg-proyectos);
     padding: 170px;
 }
 
@@ -338,7 +347,7 @@ h4 {
 
 .caja_curriculum a {
    text-decoration: none;
-   color: #000;
+   color: var(--color-black);
 }
 
 
