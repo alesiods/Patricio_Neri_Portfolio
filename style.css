@@ -480,17 +480,63 @@ h4 {
 }
 
 /* ------ MEDIA Querys ---- */
-@media only screen and (max-width: 430) and (min-width: 320px) {
+@media only screen and (max-width: 430px) and (min-width: 320px) {
+
+    /* Generales */
+
+    .margen_subtitulo_centrado{
+        font-size: 32px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Conoceme */
+
+    .main_section article h1 {
+        font-size: 32px;
+    }
+
+    .subt_conoceme {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 38px;
+        color: #ffffff;
+    }
+
     
     /* Sobre Mi */
     
     .tam_text_sobremi {
         width: 342px;
-        height: 243.64px;
         padding-top: 32px;
+    }
+    .margen_text_sobremi {
+        margin-left: 16px;
+    }
 
+    /* Curriculo */
+
+    .caja_texto_experLaboral {
+        width: 292px;
+        margin: 0 auto;
+    }
+
+    .caja_texto_experLaboral h4{
+        display: none;
     }
     
+    /* Habilidades */
+    .seccion_habilidades {
+        text-align: center;
+    }
+
+    .seccion_habilidades h4 {
+        font-size: 20px;
+        width: 125px;
+    }
+
 }
 
 @media only screen and (max-width: 800px) and (min-width: 320px){
@@ -506,14 +552,22 @@ h4 {
     }
     
     /* Contacto*/
+
+
     .seccion_contacto--redes {
-        display: flexbox;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .seccion_contacto--redes:last-child {
         flex-direction: column-reverse;
+    }
+
+    .seccion_contacto h4 {
+        font-size: 32px;
+        display: flex;
+        justify-content: center;
     }
     
 }
