@@ -315,19 +315,22 @@ h4 {
     align-items: flex-start;
     font-size: 24px;
     line-height: 30.17px;
-    margin-top: 1.7rem;
+    margin-top: 24px;
 }
 
 /* ---- Barra de progreso / meter */
 .barra_progreso_caja {
-    width: 500px;
+    margin-top: 24px;
+    width: 518px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 18px;
     line-height: 21.09px;
-    margin-top: 1.7rem;
+    padding-left: 24px;
 }
 
 .barra_progreso_caja span {
@@ -335,21 +338,30 @@ h4 {
     margin-right: 16px;
 }
 
+
 .barra_progreso_caja div {
     display: flex;
     flex-direction: row;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 18px;
     line-height: 21.09px;
-    margin-bottom: 16px;
+    /* margin-bottom: 18px; */
+}
+
+.barra_progreso_caja div span {
+    padding: 4px;
 }
 
 .barra_progreso {
-    width: 320px;
-    height: 12px;
+    display: absolute;
+    width: 243.62px;
+    height: 9px;
     background: #D9D9D9;
     border-radius: 15px;
+    left: 17.69px;
+    top: 14.5px;
+    margin-top: 4px;
 }
 
 .barra_progreso--porcentaje {
@@ -372,7 +384,8 @@ h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 18.75px;
-    margin-bottom: 16px;
+    margin-top: 38px;
+    margin-bottom: 24px;
 }
 
 .caja_curriculum a {
