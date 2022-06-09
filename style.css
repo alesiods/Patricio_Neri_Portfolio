@@ -1,5 +1,5 @@
 /* FONTS FAMILY */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap');
 
@@ -124,7 +124,7 @@ body #curriculo, #contacto {
     display: none;
 }
 
-.margen_subtitulo {
+.margen_subtitulo_centrado {
     text-align: center;
     font-family: 'Merriweather Sans';
     font-style: normal;
@@ -162,7 +162,7 @@ h4 {
 .tam_text_sobremi p {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     margin-top: 8px;
     line-height: 18.75px;
@@ -182,48 +182,54 @@ h4 {
     padding: 170px;
 }
 
-
-.margen_card_proyectos--Grid {
-    /**
-   * User input values.
-   */
-    --grid-layout-gap: 1rem;
-    --grid-column-count: 2;
-    --grid-item--min-width: 300px;
-    /**
-   * Calculated values.
-   */
-    --gap-count: calc(var(--grid-column-count) - 1);
-    --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
-    --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
-    /**
-     * Grid container.
-     */
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
-    grid-gap: var(--grid-layout-gap);
-    justify-items: center;
-    align-items: center;
-    margin: 0 auto;
+.seccion_proyectos h2 {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--color-black);
+    margin-bottom: 40px;
 }
 
+
+.margen_card_proyectos--Flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
 
 .margen_card_proyectos {
-    margin: 2.7rem 3rem;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 10px;
+    margin-top: 24px;  
+    margin: 0 23px;
+    width: 343.57px;
+    height: 320.18px;
 }
 
-.margen_card_proyectos--Grid h5 {
-    font-family: 'Merriweather Sans';;
-    font-size: 1.25rem;
-    font-weight: bold;
+.margen_card_proyectos--Flex h5 {
+    font-family: 'Merriweather Sans';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25.14px;
+    margin: 10px 0 8px 0;
 }
 
-.margen_card_proyectos--Grid p {
+.margen_card_proyectos--Flex p {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
-    width: 313px;
-    height: 50px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    width: 309px;
+    height: 69px;
 }
 
 .margen_card_proyectos a {
@@ -238,6 +244,7 @@ h4 {
     line-height: 23.44px;
     text-align: center;
     cursor: pointer;
+    margin-top: 40px;
 }
 
 .ocultar {
@@ -269,7 +276,7 @@ h4 {
 .caja_texto_experLaboral h4{
     margin-top: 24px;
     font-family: 'Merriweather Sans';
-    font-weight: bold;
+    font-weight: 500;
     font-size: 24px;
     line-height: 30.17px;
     
@@ -278,7 +285,7 @@ h4 {
 .text_expLaboral {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: bold;
+    font-weight: 300;
     font-size: 16px;
     line-height: 19px;
 }
@@ -286,14 +293,14 @@ h4 {
 .caja_texto_experLaboral p {
     margin-bottom: 1.25rem;
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 18px;
     line-height: 21.09px;
 }
 
 .caja_texto_experLaboral p span {
     font-family: 'Roboto', sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 18.75px;
 }
@@ -346,7 +353,6 @@ h4 {
     font-weight: 600;
     font-size: 18px;
     line-height: 21.09px;
-    /* margin-bottom: 18px; */
 }
 
 .barra_progreso_caja div span {
