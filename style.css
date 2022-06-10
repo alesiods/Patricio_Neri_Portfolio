@@ -24,6 +24,7 @@ body {
 }
 
 /* NavBar */
+/* Hamburguer style ---------*/
 .navbar-toggler-icon  {
     background-image: url("./assets/icons/hamb.menu.png");
     padding: 20px;
@@ -34,6 +35,15 @@ body {
 .navbar .navbar-toggler {
     border: none;
     color: transparent;
+}
+/*Offcanvas style -------*/
+.offcanvas ul li a {
+    line-height: 50px;
+}
+.offcanvas-header .btn-close {
+    background-color: var(--text-color);
+    font-size: 1.5rem;
+    margin: 14px 15px;
 }
 
 /* Scroll a secciones por id || comportamiento || */
@@ -494,8 +504,9 @@ h4 {
 @media only screen and (max-width: 810px) and (min-width: 320px) {
 
     /* NavBar ------*/
+    /*  Hamburguer style -----------*/
     .navbar-collapse ul  {
-        height: 80vh;
+        height: 50vh;
     }
     .navbar-collapse ul li  {
         line-height: 50px;
@@ -512,8 +523,21 @@ h4 {
         color: transparent;
     }
 
+    /*  OffCanvas style -----------*/
+    .offcanvas {
+        width: 90% !important;
+    }
+    .offcanvas ul li a {
+        line-height: 50px;
+    }
+    .offcanvas-end.show {
+        height: 90vh;
+    }
 
-    /* Conoceme ----------*/
+
+
+
+    /* Seccion Conoceme ---*/
     .main_section {
         width: 100%;
         height: 100vh;
