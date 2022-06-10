@@ -23,8 +23,8 @@ body {
     background-color: var(--color-white);
 }
 
-/* Scroll a secciones por id */
-body #curriculo, #contacto {
+/* Scroll a secciones por id || comportamiento || */
+#curriculo, #contacto {
     scroll-behavior: smooth;
     scroll-margin-top: 60px;
 }
@@ -261,11 +261,6 @@ h4 {
 
 /* Seccion Curriculo */
 
-.curriculo_caja {
-    height: 548px;
-    margin-top: 100px;
-}
-
 .caja_texto_experLaboral {
     width: 500px;
     margin: 0 auto;
@@ -455,6 +450,7 @@ h4 {
 
 .seccion_contacto--perfil p {
     margin: 0;
+    font-size: 18px;
 }
 
 .seccion_contacto--redes {
@@ -468,7 +464,7 @@ h4 {
     color: inherit;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28.13px;
     color: var(--text-color);
 }
@@ -479,41 +475,236 @@ h4 {
     margin: 16px;
 }
 
+
 /* ------ MEDIA Querys ---- */
-@media only screen and (max-width: 430) and (min-width: 320px) {
-    
-    /* Sobre Mi */
-    
-    .tam_text_sobremi {
-        width: 342px;
-        height: 243.64px;
-        padding-top: 32px;
+
+@media only screen and (max-width: 810px) and (min-width: 320px) {
+
+    /* Conoceme ----------*/
+    .main_section {
+        width: 100%;
+        height: 100vh;
+        justify-content: flex-start;
+    }
+
+    .main_section article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main_section article h1 {
+        font-size: 32px;
+        line-height: 40.22px;
+        transform: translateY(3rem);
 
     }
-    
-}
 
-@media only screen and (max-width: 800px) and (min-width: 320px){
-    
-    /* Proyectos */
+    .subt_conoceme {
+        font-size: 20px;
+        line-height: 23.44px;
+        transform: translateY(-6rem);
+
+    }
+
+    @media only screen and (orientation: landscape) {
+        .subt_conoceme {
+            transform: translateY(3rem);
+        }
+    }
+
+    .btn_conoceme {
+        font-size: 14px;
+        line-height: 16.41px;
+        width: 326px;
+        height: 48px;
+    }
+
+
+    /* Sobre mi -----------*/
+    .sobre_mi_caja {
+        height: auto;
+    }
+
+    .tam_text_sobremi {
+        height: 373px;
+        width: 340px;
+        padding: 24px, 16px, 24px, 16px;
+        margin-bottom: 200px;
+    }
+
+    .tam_text_sobremi p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.07px;
+        letter-spacing: 0em;
+        text-align: justify;
+    }
+
+
+    /* Proyectos  ----------------*/
+
+    #proyectos {
+        scroll-behavior: smooth;
+        scroll-margin-top: 180px;
+    }
+
+    .seccion_proyectos {
+        background-color: var(--color-white);
+        padding: 16px 0;
+        gap: 0px;
+    }
+
+    .seccion_proyectos h2 {
+        font-size: 32px;
+        line-height: 40.22px;
+    }
+
+
     .margen_card_proyectos--Flex {
+        flex-direction: column;
+    }
+
+    .margen_card_proyectos {
+        margin: 0 auto;
+        width: 340px;
+        height: 320.18px;
+    }
+
+    .margen_card_proyectos img {
+        align-self: center;
+        width: 98%;
+    }
+
+    .margen_card_proyectos--Flex h5 {
+        font-family: 'Merriweather Sans';
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25.14px;
+        margin: 0 0;
+    }
+
+    .margen_card_proyectos--Flex p {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 23px;
+        width: 309px;
+        height: 69px;
+    }
+
+
+    /* Seccion Curriculo ------------- */
+    #curriculo {
+        scroll-behavior: smooth;
+        scroll-margin-top: 100px;
+    }
+
+    .curriculo_caja {
+        height: 548px;
+        margin-top: 100px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        margin: 0 auto;
     }
-    
-    /* Contacto*/
+
+    .curriculo_caja h2 {
+        font-weight: 400;
+        font-size: 32px;
+    }
+
+    .caja_texto_experLaboral {
+        width: auto;
+        margin: 20px 20px;
+        margin-top: 32px;
+        max-width: 300px;
+    }
+
+    .caja_texto_experLaboral h4 {
+        display: none;
+    }
+
+
+
+
+    /* Seccion Habilidades */
+    .seccion_habilidades {
+        width: auto;
+    }
+
+    .seccion_habilidades h4 {
+        width: auto;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25.14px;
+    }
+
+    /* ---- Barra de progreso / meter */
+    .barra_progreso_caja {
+        width: auto;
+        padding-left: 0;
+    }
+
+    .barra_progreso_caja span {
+        width: 96.4px;
+        margin-right: 0px;
+    }
+
+    .barra_progreso_caja div span {
+        font-size: 18px;
+    }
+
+    .barra_progreso {
+        width: 209px;
+    }
+
+    /*----- CV ----------------  */
+    .caja_curriculum p {
+        font-size: 0.8rem;
+        line-height: 16.41px;
+    }
+
+    .btn_descargarCV {
+        height: 48px;
+        width: 326px;
+    }
+
+    .caja_curriculum div a .btn_descargarCV {
+        font-size: 0.75rem;
+    }
+
+    /* Seccion Contacto ----------*/
+    .seccion_contacto h4 {
+        font-size: 32px;
+    }
+
+    .seccion_contacto article {
+        width: 300px;
+        margin-top: 0px;
+    }
+
     .seccion_contacto--redes {
-        display: flexbox;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        transform: translateX(-10px);
     }
-    .seccion_contacto--redes:last-child {
+
+    .seccion_contacto--redes:nth-child(3) {
         flex-direction: column-reverse;
     }
-    
+
+    .seccion_contacto--redes a:nth-child(2) {
+        transform: translateY(35px);
+    }
+
+    .seccion_contacto--redes a:nth-child(1) {
+        transform: translateY(-90px);
+    }
+
 }
