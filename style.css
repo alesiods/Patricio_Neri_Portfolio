@@ -23,6 +23,19 @@ body {
     background-color: var(--color-white);
 }
 
+/* NavBar */
+.navbar-toggler-icon  {
+    background-image: url("./assets/icons/hamb.menu.png");
+    padding: 20px;
+}
+.navbar .navbar-toggler{
+    border: none;
+}
+.navbar .navbar-toggler {
+    border: none;
+    color: transparent;
+}
+
 /* Scroll a secciones por id || comportamiento || */
 #curriculo, #contacto {
     scroll-behavior: smooth;
@@ -480,6 +493,26 @@ h4 {
 
 @media only screen and (max-width: 810px) and (min-width: 320px) {
 
+    /* NavBar ------*/
+    .navbar-collapse ul  {
+        height: 80vh;
+    }
+    .navbar-collapse ul li  {
+        line-height: 50px;
+    }
+    .navbar-toggler-icon  {
+        background-image: url("./assets/icons/hamb.menu.png");
+        padding: 20px;
+    }
+    .navbar .navbar-toggler{
+        border: none;
+    }
+    .navbar .navbar-toggler {
+        border: none;
+        color: transparent;
+    }
+
+
     /* Conoceme ----------*/
     .main_section {
         width: 100%;
@@ -634,6 +667,11 @@ h4 {
     /* Seccion Habilidades */
     .seccion_habilidades {
         width: auto;
+    }
+
+    .barra_progreso_caja div span {
+        margin: 0 0;
+        padding: 0 0;
     }
 
     .seccion_habilidades h4 {
