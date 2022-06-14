@@ -655,7 +655,7 @@ h4 {
 
     #proyectos {
         scroll-behavior: smooth;
-        scroll-margin-top: 180px;
+        scroll-margin-top: 90px;
     }
 
     .seccion_proyectos {
@@ -666,6 +666,7 @@ h4 {
     .seccion_proyectos h2 {
         font-size: 32px;
         line-height: 40.22px;
+        margin-top: 30px;
     }
 
 
