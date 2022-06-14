@@ -41,9 +41,19 @@ body {
     line-height: 50px;
 }
 .offcanvas-header .btn-close {
-    background-color: var(--text-color);
+    color: var(--text-color);
     font-size: 1.5rem;
     margin: 14px 15px;
+}
+.offcanvas-header button {
+    color: var(--text-color);
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    padding-bottom: 4rem;
+    padding-right: 0px;
+    margin-top: -20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Scroll a secciones por id || comportamiento || */
@@ -70,6 +80,20 @@ body {
     text-underline-offset: 7px;
     text-decoration-thickness: 2px;
 }
+.nav-link:hover {
+    padding: 5px ;
+}
+
+.offcanvas-title {
+    color: var(--text-color);
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+.offcanvas-title span {
+    color: var(--text-color-2);
+    font-size: 16px;
+}
 
 /* Seccion Conoceme */
 .main_section {
@@ -77,7 +101,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("./assets/media/Frame-15.png");
+    background-image: url("./assets/media/imagen.fondo.home.png");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -510,9 +534,10 @@ h4 {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
-    margin-bottom: 1px;
+    line-height: 18.75px;
     color: rgba(17, 123, 201, 0.94);
+    width: 200px;
+    margin-bottom: -15px;
 }
 
 .seccion_contacto--redes a img {
@@ -548,18 +573,19 @@ h4 {
 
     /*  OffCanvas style -----------*/
     .offcanvas {
-        width: 90% !important;
+        width: 85% !important;
     }
     .offcanvas ul li a {
         line-height: 50px;
     }
     .offcanvas-end.show {
-        height: 90vh;
+        height: 100vh;
         border: none;
     }
 
-
-
+    .offcanvas-backdrop.fade.show {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
 
     /* Seccion Conoceme ---*/
     .main_section {
@@ -707,9 +733,7 @@ h4 {
     .caja_texto_experLaboral h4 {
         display: none;
     }
-
-
-
+    
 
     /* Seccion Habilidades */
     .seccion_habilidades {
@@ -770,26 +794,6 @@ h4 {
     .seccion_contacto article {
         width: 300px;
         margin-top: 0px;
-    }
-
-    .seccion_contacto--redes {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transform: translateX(-10px);
-    }
-
-    .seccion_contacto--redes:nth-child(3) {
-        flex-direction: column-reverse;
-    }
-
-    .seccion_contacto--redes a:nth-child(2) {
-        transform: translateY(35px);
-    }
-
-    .seccion_contacto--redes a:nth-child(1) {
-        transform: translateY(-90px);
     }
 
 }

@@ -13,4 +13,5 @@ document.getElementById("verMenos").addEventListener("click", () => {
     document.querySelectorAll(".mostrar").forEach((element) => {
         element.classList.remove("mostrar");
     });
+    document.getElementById("proyectos").scrollIntoView({behavior: "smooth"});
 });
